@@ -1,0 +1,21 @@
+{
+  "name": "api_stud_class_dapvril_gaetan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "yaml": "^2.3.4"
+  }
+}

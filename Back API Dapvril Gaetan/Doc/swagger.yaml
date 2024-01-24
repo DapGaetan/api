@@ -1,0 +1,255 @@
+openapi: 3.0.0
+info:
+  title: API Student et Classes Dapvril Gaetan
+  description: >-
+
+    Resources
+
+
+    [Building
+    requests](https://learning.postman.com/docs/sending-requests/requests/)  
+
+    [Authorizing
+    requests](https://learning.postman.com/docs/sending-requests/authorization/)  
+
+    [Using
+    variables](https://learning.postman.com/docs/sending-requests/variables/)  
+
+    [Managing
+    environments](https://learning.postman.com/docs/sending-requests/managing-environments/)  
+
+    [Writing
+    scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/)
+    
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /api/students/2:
+    get:
+      tags:
+        - default
+      summary: students
+      description: >-
+        This is a GET request and it is used to "get" data from an endpoint.
+        There is no request body for a GET request, but you can use query
+        parameters to help specify the resource you want data on (e.g., in this
+        request, we have `id=1`).
+
+
+        A successful GET response will have a `200 OK` status, and should
+        include some kind of response body - for example, HTML web content or
+        JSON data.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    patch:
+      tags:
+        - default
+      summary: students
+      description: >-
+        This is a PUT request and it is used to overwrite an existing piece of
+        data. For instance, after you create an entity with a POST request, you
+        may want to modify that later. You can do that using a PUT request. You
+        typically identify the entity being updated by including an identifier
+        in the URL (eg. `id=1`).
+
+
+        A successful PUT request typically returns a `200 OK`, `201 Created`, or
+        `204 No Content` response code.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                firstname: Jaques
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    put:
+      tags:
+        - default
+      summary: students
+      description: >-
+        This is a DELETE request, and it is used to delete data that was
+        previously created via a POST request. You typically identify the entity
+        being updated by including an identifier in the URL (eg. `id=1`).
+
+
+        A successful DELETE request typically returns a `200 OK`, `202
+        Accepted`, or `204 No Content` response code.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                id: '2'
+                lastname: Senechal
+                firstname: Pierre
+                email: pierresenechal77@gmail.com
+                phone: 02.23.45.67.89
+                address: 1488 rue du chateau
+                zip: '77120'
+                city: mouroux
+                class: 1
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/classes/2:
+    get:
+      tags:
+        - default
+      summary: classes
+      description: >-
+        This is a GET request and it is used to "get" data from an endpoint.
+        There is no request body for a GET request, but you can use query
+        parameters to help specify the resource you want data on (e.g., in this
+        request, we have `id=1`).
+
+
+        A successful GET response will have a `200 OK` status, and should
+        include some kind of response body - for example, HTML web content or
+        JSON data.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    patch:
+      tags:
+        - default
+      summary: classes
+      description: >-
+        This is a PUT request and it is used to overwrite an existing piece of
+        data. For instance, after you create an entity with a POST request, you
+        may want to modify that later. You can do that using a PUT request. You
+        typically identify the entity being updated by including an identifier
+        in the URL (eg. `id=1`).
+
+
+        A successful PUT request typically returns a `200 OK`, `201 Created`, or
+        `204 No Content` response code.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: Astrologie
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    put:
+      tags:
+        - default
+      summary: classes
+      description: >-
+        This is a DELETE request, and it is used to delete data that was
+        previously created via a POST request. You typically identify the entity
+        being updated by including an identifier in the URL (eg. `id=1`).
+
+
+        A successful DELETE request typically returns a `200 OK`, `202
+        Accepted`, or `204 No Content` response code.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                id: '2'
+                name: Développeur fullstack
+                level: M1
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/students:
+    post:
+      tags:
+        - default
+      summary: students
+      description: >-
+        This is a POST request, submitting data to an API via the request body.
+        This request submits JSON data, and the data is reflected in the
+        response.
+
+
+        A successful POST request typically returns a `200 OK` or `201 Created`
+        response code.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                lastname: Dumont
+                firstname: Bertrand
+                email: dumont.bertrand@gmail.com
+                phone: 01.89.45.67.89
+                address: 89 rue de la compote
+                zip: '62117'
+                city: Brebierre
+                class: 1
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/classes/:
+    post:
+      tags:
+        - default
+      summary: classes
+      description: >-
+        This is a POST request, submitting data to an API via the request body.
+        This request submits JSON data, and the data is reflected in the
+        response.
+
+
+        A successful POST request typically returns a `200 OK` or `201 Created`
+        response code.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: Archeologue
+                level: M2
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/students/5:
+    delete:
+      tags:
+        - default
+      summary: students
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/classes/6:
+    delete:
+      tags:
+        - default
+      summary: classes
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}

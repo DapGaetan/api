@@ -1,0 +1,7 @@
+id,lastname,firstname,email,phone,address,zip,city,class
+1,Michaud,Thierry,ThierryMichaud@jourrapide.com,05.95.70.45.85,82 rue Porte d'Orange,81100,CASTRES,1
+2,Dupont,Jaques,jasandupont@mail.com,01.23.45.67.89,123 rue de Paris,75000,Paris,3
+3,Parrot,Aline,alineparrot@mailme.fr,01.83.67.57.49,70 rue Sadi Carnot,93300,AUBERVILLIERS,5
+5,Dumont,Bertrand,dumont.bertrand@gmail.com,01.89.45.67.89,1488 rue de la compote,62117,Brebière,4
+4,Machin,Jean,machin.jean@gmail.com,01.89.45.67.89,89 rue de la compote,89560,Marseille,2
+6,Pierre,Senechal,pierresenechal77@gmail.com,06.59.48.16.23,1488 rue du chateau,77120,Mouroux,4

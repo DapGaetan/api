@@ -1,0 +1,26 @@
+-|Exercice API Student/class|-
+  (Initialisé le projet)
+  1- npm i
+
+  (Lancer le server)
+  2- node index.js
+
+  HTTP Basic Autentication :
+
+  - Port API : 3000
+
+  - Identifiant : IDENTIFIANT
+
+  - Mot de passe : MDP123
+
+Url de la doc : http://localhost:3000/api-docs
+
+  <!--
+    ▄▄▄▄▄ ████▄ ▀▄    ▄ ▄███▄     ▄       ▄        ▄   ████▄ ▄███▄   █     
+  ▄▀  █   █   █   █  █  █▀   ▀     █  ▀▄   █        █  █   █ █▀   ▀  █     
+      █   █   █    ▀█   ██▄▄    █   █   █ ▀     ██   █ █   █ ██▄▄    █     
+  ▄ █    ▀████    █    █▄   ▄▀ █   █  ▄ █      █ █  █ ▀████ █▄   ▄▀ ███▄  
+    ▀            ▄▀     ▀███▀   █▄ ▄█ █   ▀▄    █  █ █       ▀███▀       ▀ 
+                                ▀▀▀   ▀        █   ██                     
+                                                                          
+  -->
